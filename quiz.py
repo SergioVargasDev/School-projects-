@@ -18,9 +18,7 @@ import re
 def average():
   sum_lista1_0 = sum(lista1_0)
   cantidad_lista1_0 = len(lista1_0)
-  global average
   average = sum_lista1_0/cantidad_lista1_0
-  global average_round
   average_round = round(average, 2)
   print("\n\nEl promedio de los quizzes fue de: " + str(average_round) + ". ")
   if average_round == 100:
@@ -37,13 +35,9 @@ def average():
 #Esta función propicia que tú tengas la potestad de elegir cuántas veces se repetirá el quiz. 
 def reiteracion():
   #Primero empezamos definiendo los contadores y las listas a usar
-  global contador1
   contador1 = 0
-  global lista1
   lista1 = []
-  global lista1_0
   lista1_0 = []
-  global x 
   #Aquí se pregunta cuántas veces se repetirá el quiz
   x = int(input("\nFavor de insertar la cantidad de veces a realizar el quiz: "))
   while x <= 0:
